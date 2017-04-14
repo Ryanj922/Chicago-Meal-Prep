@@ -1,9 +1,12 @@
 
+
 html,body {
+
 margin:0;
 padding:0;
 height:100%;
 width:100%;
+opacity: 0.9;
 }
 
 .intro {
@@ -31,16 +34,18 @@ max-width: none;
 
 .content h1{
   color:#f1f3f4;
-  text-shadow:0px 0px 300px #000;
-  font-size: 500%;
+  text-shadow:400px 400px 300px #000;
+  font-size: 550%;
+  text-transform: uppercase;
+  font-family: Oswald;
 }
 
 .btn{
-  border-radius: 9px;
-  color:#036a81;
-  font-size: 135%;
+  border-radius: 10px;
+  color:#fff;
+  font-size: 145%;
   padding:10px 20px;
-  border: solid #0368a1 3px;
+  border: solid #fff 4px;
   text-transform: uppercase;
   text-decoration: none;
 }
