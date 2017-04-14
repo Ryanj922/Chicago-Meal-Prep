@@ -1,65 +1,62 @@
-
-
-html,body {
-
-margin:0;
-padding:0;
-height:100%;
-width:100%;
-opacity: 0.9;
+    html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
 }
 
 .intro {
-height:100%;
-width: 100%;
-margin: auto;
-background-image: url(../img/mealprep3.jpg);
-display:table;
-top:0;
-background-size:cover;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background-image: url(../img/mealprep3.jpg);
+    display: table;
+    top: 0;
+    background-size: cover;
 }
 
-.intro .inner{
-display: table-cell;
-vertical-align: middle;
-width: 100%;
-max-width: none;
+.intro .inner {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-width: none;
 }
 
 .content {
-  max-width: 500px;
-  margin: 0 auto;
-  text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.content h1{
-  color:#f1f3f4;
-  text-shadow:400px 400px 300px #000;
-  font-size: 550%;
-  text-transform: uppercase;
-  font-family: Oswald;
+.content h1 {
+    color: #f1f3f4;
+    text-shadow: 400px 400px 300px #000;
+    font-size: 550%;
+    text-transform: uppercase;
+    font-family: Oswald;
 }
 
-.btn{
-  border-radius: 10px;
-  color:#fff;
-  font-size: 145%;
-  padding:10px 20px;
-  border: solid #fff 4px;
-  text-transform: uppercase;
-  text-decoration: none;
+.btn {
+    border-radius: 10px;
+    color: #fff;
+    font-size: 145%;
+    padding: 10px 20px;
+    border: solid #fff 4px;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
-.btn:hover{
-  color: #fff;
-  border:solid #fff 3px;
+.btn:hover {
+    color: #fff;
+    border: solid #fff 3px;
 }
 
-@@media screen and (max-width: 768px){
-  .content h1{
-    font-size: 250%;
-}
-  .btn{
-    font-size: 110%;
-    padding:7px 15px;
-  }
+@@media screen and (max-width: 768px) {
+    .content h1 {
+        font-size: 250%;
+    }
+    .btn {
+        font-size: 110%;
+        padding: 7px 15px;
+    }
