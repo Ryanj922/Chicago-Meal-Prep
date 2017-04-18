@@ -1,63 +1,264 @@
-    html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0.9;
-}
+        html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0.9;
+    }
 
-.intro {
-    height: 100%;
-    width: 100%;
-    margin: auto;
-    background-image: url(../img/mealprep3.jpg);
-    display: table;
-    top: 0;
-    background-size: cover;
-}
 
-.intro .inner {
-    display: table-cell;
-    vertical-align: middle;
-    width: 100%;
-    max-width: none;
-}
 
-.content {
-    max-width: 500px;
-    margin: 0 auto;
+  }
+  h1{
+    font-size: 100px;
+    font-family: Oswald, serif;
+    color: white;
+    text-shadow: 20px;
     text-align: center;
+    padding: 330px;
+    vertical-align: middle;
+    font-weight: 400;
+  }
+
+
+    #page1 {
+        height: 100%;
+        /*backgroung img goes here*/
+        background-image: url(../img/prepmain.jpeg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        }
+
+
+
+        h1{
+          font-size: 100px;
+          font-family: Oswald, serif;
+          color: white;
+          text-shadow: 20px;
+          text-align: center;
+          padding: 250px;
+          vertical-align: middle;
+          font-weight: 400;
+        }
+
+
+    #page2 {
+        height: 60%;
+        background-image: url(../img/chop.jpg);
+        background-repeat: no-repeat;
+        background-size: 40% 40%;
+        background-position: 25px 200px;
+        padding-left: 510px;
+        padding-bottom: 200px;
+        padding-top: 100px;
+        margin-bottom: 100px;
+        background-color: grey;
+
+
+    }
+
+    #page3 {
+        height: 100%;
+        padding-top: 100px;
+    }
+
+
+
+#nav{
+	width:100%;
+ background-color: #e3e5e2;
+	text-align:center;
+	position:fixed;
+	top: 0px;
+	z-index:9990;
+	float:left;
+	padding:15px 0;
+  border-bottom: solid 2px navy;
+  text-decoration: none;
+}
+
+* html #nav {
+   position: absolute;
+}
+
+
+
+#nav ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+#nav ul li {
+	display:inline;
+	padding:0 40px 0 0;
 
 }
 
-.content h1 {
-    color: #f1f3f4;
-    text-shadow: 400px 400px 300px #000;
-    font-size: 550%;
-    text-transform: uppercase;
-    font-family: Oswald;
+#nav ul li.last{
+	padding:0 0px 0 0;
 }
 
-.btn {
-    border-radius: 10px;
-    color: #fff;
-    font-size: 145%;
-    padding: 10px 20px;
-    border: solid #fff 4px;
-    text-transform: uppercase;
-    text-decoration: none;
+#nav ul li a{
+	text-transform:uppercase;
+	color:white;
+	font-size:2.8em;
+
 }
 
-.btn:hover {
-    color: #fff;
-    border: solid #fff 3px;
-}
 
-@@media screen and (max-width: 768px) {
+    .intro {
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        display: table;
+        top: 0;
+        background-size: cover;
+    }
+
+    .intro .inner {
+        display: table-cell;
+        vertical-align: middle;
+        width: 100%;
+        max-width: none;
+    }
+
+    .content {
+        max-width: 500px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
     .content h1 {
-        font-size: 250%;
+        color: #000;
+        font-size: 550%;
+        text-transform: uppercase;
+        font-family: Oswald;
     }
+
+    .about {
+        text-align: center;
+        padding: 160px;
+        padding-bottom: 1000px;
+        font-size: 50px;
+    }
+
+    .about-text {
+        font-family: Oswald;
+        font-size: 22px;
+        text-align: right;
+        text-indent: 30px;
+
+    }
+
+    h2 {
+        font-size: 50px;
+        font-family: Oswald, sans-serif;
+    }
+
     .btn {
-        font-size: 110%;
-        padding: 7px 15px;
+        border-radius: 10px;
+        color: #fff;
+        font-size: 145%;
+        padding: 10px 20px;
+        border: solid #fff 4px;
+        text-transform: uppercase;
+        text-decoration: none;
     }
+
+    .btn-about {
+        border-radius: 10px;
+        color: #000;
+        font-size: 145%;
+        padding: 10px 20px;
+        border: solid #fff 4px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .btn .btn-about :hover {
+        color: #fff;
+        border: solid #fff 3px;
+    }
+
+    #form {
+        background: #F8A434;
+        font-family: Oswald, sans-serif;
+        color: #FDFCFB;
+        text-align: center;
+    }
+
+    form {
+        width: 450px;
+        margin: 17% auto;
+    }
+
+    .header {
+        font-size: 35px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+    }
+
+    .description {
+        font-size: 18px;
+        letter-spacing: 1px;
+        line-height: 1.3em;
+        margin: -2px 0 45px;
+    }
+
+    .input {
+        display: flex;
+        align-items: center;
+    }
+
+    .button {
+        height: 44px;
+        border: none;
+    }
+
+    #email {
+        width: 75%;
+        background: #FDFCFB;
+        font-family: inherit;
+        color: #737373;
+        letter-spacing: 1px;
+        text-indent: 5%;
+        border-radius: 5px 0 0 5px;
+    }
+
+    #submit {
+        width: 25%;
+        height: 46px;
+        background: #E86C8D;
+        font-family: inherit;
+        font-weight: bold;
+        color: inherit;
+        letter-spacing: 1px;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        transition: background .3s ease-in-out;
+    }
+
+    #submit:hover {
+        background: #d45d7d;
+    }
+
+    input:focus {
+        outline: none;
+        outline: 2px solid #E86C8D;
+        box-shadow: 0 0 2px #E86C8D;
+    }
+
+    @@media screen and (max-width: 768px) {
+        .content h1 {
+            font-size: 250%;
+        }
+        .btn {
+            font-size: 110%;
+            padding: 7px 15px;
+        }
+        form {
+            width: 450px;
+            margin: 17% auto;
+        }
