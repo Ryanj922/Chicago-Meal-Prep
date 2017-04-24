@@ -2,120 +2,131 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title> Chicago Meal Prep</title>
-    <link rel="stylesheet" type="text/css" href="css/Landing.css">
-    <link href="https://fonts.googleapis.com/css?family=Oswald|Rubik+Mono+One" rel="stylesheet">
+  <meta charset="utf-8">
+  <title> Chicago Meal Prep</title>
+  <link rel="stylesheet" type="text/css" href="css/Landing.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Rubik+Mono+One" rel="stylesheet">
 
 </head>
 <header>
-    <div id="header">
-        <div id="nav">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+  <div id="header">
+    <div id="nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
 </header>
 
 <body>
 
-    <div id="page1">
-        <a name="home"></a>
-        <div class="page-padding" class="smooth"></div>
-        <h1>Let us<br> do the <br>prepping!</h1>
+  <div id="page1">
+    <a name="home"></a>
+    <div class="page-padding" class="smooth"></div>
+    <h1 style='border:2px white solid;'>Let us<br> do the <br>prepping!</h1>
+  </div>
+
+  <!--end of landing-->
+
+  <!--about-->
+  <div id="page2">
+    <a name="about"></a>
+    <div class="about">
+      <p>Our Mission:</p>
+      <p class="about-text">
+        Here at Chicago Meal Prep we believe that healthier food options should be readily available to anyone who makes the decision to take charge of their life through their diet and lifestyle. Whether you're a seasoned body builder or just looking to transform
+        and take control of your diet, we take care of the hard part so you can focus on your goals!<br><br><br> To join the team and be one step closer to achieving your goals simply sign up with your email below and our staff will reach out
+        to you and get your personalized meal prep started.</p>
+      <div class="page-padding" class="smooth"></div>
     </div>
+  </div>
+  <!--End of about-->
 
-    <!--end of landing-->
 
-    <!--about-->
-    <div id="page2">
-        <a name="about"></a>
-        <div class="about">
-            <p>Our Mission:</p>
-            <p class="about-text">
-                Here at Chicago Meal Prep we believe that healthier food options should be readily available to anyone who makes the decision to take charge of their life through their diet and lifestyle. Whether you're a seasoned body builder or just looking to transform
-                and take control of your diet, we take care of the hard part so you can focus on your goals!<br><br><br>
 
-                    To join the team and be one step closer to achieving your goals simply sign up with your email below and our staff will reach out
-                  to you and get your personalized meal prep started.</p>
-            <div class="page-padding" class="smooth"></div>
+
+  <!--Sign UP-->
+
+  <div id="form">
+    <form action="#" method="post" name="sign up for beta form">
+
+      <div class="header">
+        <p>Sign Up!</p>
+      </div>
+      <div class="description">
+        <p>Join the team and be one step closer to achieving your goals.</p>
+      </div>
+      <div class="input">
+        <input type="text" class="button" id="email" name="email" placeholder="">
+        <input type="submit" class="button" id="submit" value="SIGN UP">
+        <div id="page3">
+          <a name="contact"></a>
+          <div class="page-padding" class="smooth"></div>
         </div>
-    </div>
-    <!--End of about-->
+        <!--END page1-->
+      </div>
+    </form>
+  </div>
 
 
-
-
-    <!--Sign UP-->
-
-    <div id="form">
-        <form action="#" method="post" name="sign up for beta form">
-
-            <div class="header">
-                <p>Sign Up!</p>
-            </div>
-            <div class="description">
-                <p>Join the team and be one step closer to achieving your goals.</p>
-            </div>
-            <div class="input">
-                <input type="text" class="button" id="email" name="email" placeholder="">
-                <input type="submit" class="button" id="submit" value="SIGN UP">
-                <div id="page3">
-                    <a name="contact"></a>
-                    <div class="page-padding" class="smooth"></div>
-                </div>
-                <!--END page1-->
-            </div>
-        </form>
-    </div>
-
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            function filterPath(string) {
-                return string
-                    .replace(/^\//, '')
-                    .replace(/(index|default).[a-zA-Z]{3,4}$/, '')
-                    .replace(/\/$/, '');
-            }
-            $('a[href*=#]').each(function() {
-                if (filterPath(location.pathname) == filterPath(this.pathname) &&
-                    location.hostname == this.hostname &&
-                    this.hash.replace(/#/, '')) {
-                    var $targetId = $(this.hash),
-                        $targetAnchor = $('[name=' + this.hash.slice(1) + ']');
-                    var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
-                    if ($target) {
-                        var targetOffset = $target.offset().top;
-                        $(this).click(function() {
-                            $('html, body').animate({
-                                scrollTop: targetOffset
-                            }, 1000);
-                            return false;
-                        });
-                    }
-                }
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      function filterPath(string) {
+        return string
+          .replace(/^\//, '')
+          .replace(/(index|default).[a-zA-Z]{3,4}$/, '')
+          .replace(/\/$/, '');
+      }
+      $('a[href*=#]').each(function() {
+        if (filterPath(location.pathname) == filterPath(this.pathname) &&
+          location.hostname == this.hostname &&
+          this.hash.replace(/#/, '')) {
+          var $targetId = $(this.hash),
+            $targetAnchor = $('[name=' + this.hash.slice(1) + ']');
+          var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+          if ($target) {
+            var targetOffset = $target.offset().top;
+            $(this).click(function() {
+              $('html, body').animate({
+                scrollTop: targetOffset
+              }, 1000);
+              return false;
             });
-        });
-    </script>
+          }
+        }
+      });
+    });
+  </script>
 
 
 </body>
 
-<!--contact socialmedia
-<footer>
-    <div class="contact">
 
-        <ul>
-            <li><a href="https://www.facebook.com/alexander.melo.14606936" class="facebook" target="_blank"><span>Facebook</span></a></li>
-            <li><a href="https://twitter.com/Alexander_html" class="entypo-twitter" target="_blank"><span>Twitter</span></a></li>
-            <li><a href="#" class="entypo-gplus" target="_blank"><span>Google+</span></a></li>
-            <li><a href="https://www.instagram.com/eat.sleep.code/" class="entypo-instagrem" target="_blank"><span>Instagram</span></a></li>
-        </ul>
-    </div>
+<footer>
+  <div class="contact1">
+    <h4><strong>Chicago Meal Prep</strong></h4>
+    <p>1111 State St
+      <br> Chicago,Illinois 60611
+      <br><br>(773)000-0000
+      <br><a href="mailto:ChicagoMealPrep@gmail.com">ChicagoMealPrep@gmail.com</a>
+    </p>
+  </div>
+
+
+
+  <div class="contact">
+
+    <ul>
+      <li>
+        <a href="https://www.facebook.com/alexander.melo.14606936"> <img src="img/Facebook.png" alt="facebook Logo" </a></li>
+      <li>
+        <a href="https://twitter.com/Alexander_html"> <img src="img/Twitter.png" alt="twitter Logo" </a></li>
+      <li>
+        <a href="https://www.instagram.com/eat.sleep.code/"> <img src="img/Instagram.png" alt="Instagram Logo" </a></li>
+    </ul>
+  </div>
 </footer>
 
 </html>

@@ -10,14 +10,16 @@
 
   }
   h1{
+
     font-size: 100px;
     font-family: Oswald, serif;
     color: white;
     text-shadow: 20px;
     text-align: center;
-    padding: 330px;
+    padding: 430px;
     vertical-align: middle;
     font-weight: 400;
+
   }
 
 
@@ -37,23 +39,23 @@
           color: white;
           text-shadow: 20px;
           text-align: center;
-          padding: 250px;
+          padding: 200px;
           vertical-align: middle;
           font-weight: 400;
         }
 
 
     #page2 {
-        height: 60%;
-        background-image: url(../img/chop.jpg);
+        height: 100%;
+        background-image: url(../img/counter.jpg);
         background-repeat: no-repeat;
-        background-size: 40% 40%;
-        background-position: 25px 200px;
-        padding-left: 510px;
-        padding-bottom: 200px;
+        background-size: 100% 100%;
+        background-position:1px 10px;
+        padding-left: 10px;
+        padding-bottom: 300px;
         padding-top: 100px;
         margin-bottom: 100px;
-        background-color: grey;
+
 
 
     }
@@ -61,20 +63,22 @@
     #page3 {
         height: 100%;
         padding-top: 100px;
+        background-color:#fff;
+
     }
 
 
 
 #nav{
 	width:100%;
- background-color: #e3e5e2;
+ background-color:rgba(255,255,255,0.5);
 	text-align:center;
 	position:fixed;
 	top: 0px;
 	z-index:9990;
 	float:left;
-	padding:15px 0;
-  border-bottom: solid 2px navy;
+	padding:1px 0;
+  border-bottom: solid 2px black;
   text-decoration: none;
 }
 
@@ -91,6 +95,7 @@
 }
 
 #nav ul li {
+
 	display:inline;
 	padding:0 40px 0 0;
 
@@ -98,13 +103,14 @@
 
 #nav ul li.last{
 	padding:0 0px 0 0;
+    list-style: none;
 }
 
 #nav ul li a{
 	text-transform:uppercase;
-	color:white;
-	font-size:2.8em;
-
+	color:black;
+	font-size:1.8em;
+  list-style: none;
 }
 
 
@@ -139,7 +145,7 @@
 
     .about {
         text-align: center;
-        padding: 160px;
+        padding: 100px;
         padding-bottom: 1000px;
         font-size: 50px;
     }
@@ -147,7 +153,6 @@
     .about-text {
         font-family: Oswald;
         font-size: 22px;
-        text-align: right;
         text-indent: 30px;
 
     }
@@ -183,7 +188,8 @@
     }
 
     #form {
-        background: #F8A434;
+        background: #d3d3d3;
+        background-size:100% 100%;
         font-family: Oswald, sans-serif;
         color: #FDFCFB;
         text-align: center;
@@ -191,13 +197,15 @@
 
     form {
         width: 450px;
-        margin: 17% auto;
+        height: 300px;
+        margin: 10% auto;
     }
 
     .header {
         font-size: 35px;
         text-transform: uppercase;
         letter-spacing: 5px;
+
     }
 
     .description {
@@ -219,9 +227,9 @@
 
     #email {
         width: 75%;
-        background: #FDFCFB;
+        background: #fff;
         font-family: inherit;
-        color: #737373;
+        color: #73737;
         letter-spacing: 1px;
         text-indent: 5%;
         border-radius: 5px 0 0 5px;
@@ -249,6 +257,26 @@
         outline: 2px solid #E86C8D;
         box-shadow: 0 0 2px #E86C8D;
     }
+
+/* social links*/
+.contact1{
+  text-align: center;
+
+}
+
+.contact{
+  margin-top: 60px;
+  text-align: center;
+  list-style-type: none;
+
+}
+ul li {
+  list-style: none;
+  display: inline;
+  margin: 0;
+  padding: 0; }
+
+
 
     @@media screen and (max-width: 768px) {
         .content h1 {
